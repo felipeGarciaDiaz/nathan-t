@@ -63,12 +63,6 @@ section img {
     width: 100%;
 }
 
-.bar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .navbar ul li {
     position: relative;
     text-align: center;
@@ -130,7 +124,8 @@ section img {
     justify-content: space-evenly;
     align-items: center;
     padding: 5em 0;
-    height: 50em;
+    height: 40em;
+    margin-bottom: 3em;
 }
 
 .intro-card {
@@ -138,9 +133,9 @@ section img {
     flex-direction: column;
     justify-content: center;
     padding: 2em 3em;
-    height: 60%;
+    height: 70%;
     width: 50%;
-    background: white;
+    background: #fff;
     border: 2px #0E1C36 solid;
     border-radius: 2em;
 
@@ -148,15 +143,75 @@ section img {
 }
 
 .introduction {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .intro-text {
-    font-size: 1.2em;
+    font-size: 1em;
     color: gray;
     padding: 1em 0;
 }
 
+.projects {
+    height: 55em;
+    margin: 5em 2em;
+    padding: 2em 2em 0 2em;
+    background: #fff;
+    border: 2px #0E1C36 solid;
+    border-radius: 2em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "proj1 proj2"
+    "proj3 proj4";
+
+    width: 100%;
+    height: 90%;
+}
+
+.projcard {
+    width: 90%;
+    height: 90%;
+    margin: 2em;
+    justify-self: center;
+    border-radius: 2em;
+}
+
+.proj1 {
+    grid-area: proj1;
+    background: #ACE9DD;
+}
+
+.proj2 {
+    grid-area: proj2;
+    background: #B5EFCE;
+}
+
+.proj3 {
+    grid-area: proj3;
+    background: #F2E7CA;
+}
+
+.proj4 {
+    grid-area: proj4;
+    background: #F6D3AF
+}
+
+.proj-title {
+    margin: 1.5em 0 0 1.5em;
+}
+
+.description {
+    padding: 0.5em 2em;
+}
+
+.subheadings {
+    margin-bottom: 1em;
+}
 #resume::after {
     content: "";;
     background-color: #FF914D;
