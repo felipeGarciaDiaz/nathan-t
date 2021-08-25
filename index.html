@@ -18,10 +18,10 @@
             </div>
             <div class="navbar nav-place">
                 <ul>
-                    <li><a href="">about</a></li>
+                    <li><a href="#introid">about</a></li>
                     <li><a href="#projectid">projects</a></li>
-                    <li><a href="">illustration</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#illusid">illustration</a></li>
+                    <li><a href="#getintouch">contact</a></li>
                 </ul>
             </div>
             <div class="contact nav-place">
@@ -44,20 +44,21 @@
         </div>
     </nav>
     <main>
-        <section class="intro">
+        <section class="intro" id="introid">
             <div class="intro-card">
                 <h1 class="introduction">Hi, I'm Nathan Tang 👋</h1>
-                <p class="intro-text"> I am a mechanical engineering student at the University of Waterloo by day and an
-                    Illustrator by night. I am interested in engineering design and how we can make better solutions to
+                <p class="intro-text"> I am a mechanical engineering student at the University of Waterloo. I am
+                    interested in engineering design and how we can make better solutions to
                     tackle the global problems we face today. In particular, I love learning about aerospace, aviation,
-                    and automation.
+                    and automation. I'm also a freelance illustrator and I enjoy web development as well. I can never
+                    get enough creative outlets to express my passion for design!
                 </p>
                 <button type="button" id="resume">RESUME</button>
             </div>
             <img src="images/dp.PNG" alt="photo of nathan tang" height="320px" width="250px">
         </section>
-        <section class="projects">
-            <h2 id="projectid" class="subheadings">projects 🔨</h2>
+        <section class="projects" id="projectid">
+            <h2 class="subheadings">featured projects 🔨</h2>
             <hr>
             <div class="project-grid">
                 <div class="projcard proj1">
@@ -67,6 +68,7 @@
                         laboriosam ipsam debitis, tempore qui cumque quaerat, odit at perferendis vitae necessitatibus
                         mollitia. Rem, cumque dolorum. Cumque.
                     </p>
+                    <button type="button" class="proj-button" id="button1">Coming Soon 📅</button>
                 </div>
                 <div class="projcard proj2">
                     <h3 class="proj-title">Standing Desk</h3>
@@ -75,6 +77,7 @@
                         suscipit in tenetur deserunt quo, officia dignissimos! Cum perspiciatis fuga vero natus optio
                         repellat a porro ab.
                     </p>
+                    <button type="button" class="proj-button" id="button2">View More 💡</button>
                 </div>
                 <div class="projcard proj3">
                     <h3 class="proj-title">Conway's Game of Life</h3>
@@ -83,16 +86,39 @@
                         minus quaerat nobis quam, consequuntur amet, dolorum quasi voluptatem placeat illo culpa unde
                         fugit eos quas voluptatibus in?
                     </p>
+                    <button type="button" class="proj-button" id="button3">Coming Soon 📅</button>
                 </div>
                 <div class="projcard proj4">
-                    <h3 class="proj-title">EIR Match</h3>
+                    <h3 class="proj-title">EIR Matching Web Tool</h3>
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere, excepturi magnam,
                         molestias aliquam, reiciendis at ratione id a adipisci similique nesciunt numquam animi. Et ipsa
                         dolorum accusamus rem sequi.
                     </p>
+                    <button type="button" class="proj-button" id="button4">View More 💡</button>
                 </div>
             </div>
+        </section>
+        <section class="illustrations" id="illusid">
+            <h2 class="subheadings">illustrations ✏️</h2>
+            <hr>
+        </section>
+        <section class="contact-me" id="getintouch">
+            <h2 class="subheadings contacttitle"> Get in touch!</h2>
+            <p class="contactdescription">Thanks for dropping by, I'd love to get to know you some more! You can reach
+                out to me below.</p>
+            <form>
+                <label for="email">email address</label>
+                <input type="email" id="email" name="email">
+                <label for="name">name</label>
+                <input type="text" id="name" name="name">
+                <label for="subject">subject</label>
+                <input type="text" id="subject" name="subject">
+                <label for="msg">message</label>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                <button type="button" class="contactbutton">Submit ✈️</button>
+            </form>
+
         </section>
     </main>
 </body>

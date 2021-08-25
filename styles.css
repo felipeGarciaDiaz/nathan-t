@@ -32,6 +32,55 @@ section img {
     border-radius: 2em;
 }
 
+label {
+    font-family: Roboto;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+input, textarea {
+    border-radius: 1em;
+    border: 2px black solid;
+    outline: none;
+    padding: 1em;
+}
+
+input {
+    height: 2em;
+    width: 80%;
+}
+
+textarea {
+    height: 10em;
+    width: 80%;
+    resize: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form label {
+    align-self: start;
+    margin-left: 10%;
+}
+
+textarea:focus, input:focus {
+    border-color: #ACE9DD;
+    box-shadow:  0 0 10px rgb(172,233,221, 0.6);
+    outline: 0 none;
+}
+
 .sidebar {
     height: 100%;
     width: 100%;
@@ -93,10 +142,14 @@ section img {
 }
 
 .navbar a:hover::before {
-    background: #FF914D;
+    background: #B5EFCE;
     animation: growbar 1s ease-in-out;
 }
 
+.navbar a:hover {
+    animation: text-change 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
 
 .nav-place ul {
     display: flex;
@@ -178,7 +231,7 @@ section img {
     height: 90%;
     margin: 2em;
     justify-self: center;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 .proj1 {
@@ -212,9 +265,72 @@ section img {
 .subheadings {
     margin-bottom: 1em;
 }
+
+.proj-button {
+    font-weight: 500;
+    font-size: 1em;
+    background:rgba(255,255,255, 0.3);;
+    border: none;
+    border-radius: 1em;
+    margin-left: 1.5em;
+    padding: 0.5em;
+    width: 10em;
+}
+
+.proj-button:hover {
+    cursor: pointer;
+}
+
+.illustrations {
+    height: 25em;
+    margin: 10em 2em;
+    padding: 2em 2em 0 2em;
+    background: #fff;
+    border: 2px #0E1C36 solid;
+    border-radius: 2em;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 40em;
+    width: 100%;
+}
+
+.contacttitle {
+    font-size: 3em;
+}
+
+.contacttitle, .contactdescription {
+    text-align: center;
+    padding: 0 2em;
+}
+
+.contactbutton {
+    border: none;
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 2em;
+    background: #ddd;
+    font-weight: bold;
+}
+
+.contactbutton:hover {
+    cursor: pointer;
+    animation: clrchange 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.contactbutton:active {
+    border: 1px #0E1C36 solid;
+    background: #fff;
+}
+
 #resume::after {
     content: "";;
-    background-color: #FF914D;
+    background-color: #ACE9DD;
     width: 50%;
     height: 100%;
     display: block;
@@ -230,7 +346,7 @@ section img {
 
 #resume::before {
     content:"";
-    background: linear-gradient(to right, #FF5757 50%, rgba(255,255,255,0) 50% 70%, #FFDE59 70%);
+    background: linear-gradient(to right, #F2E7CA 50%, rgba(255,255,255,0) 50% 70%, #F6D3AF 70%);
     width: 70%;
     height: 50%;
 
@@ -262,8 +378,8 @@ section img {
 }
 
 #resume:hover::after {
-    top: 20%;
-    right: 70%
+    top: 30%;
+    right: 60%;
 }
 
 #resume:hover::before {
@@ -274,10 +390,27 @@ section img {
 @keyframes growbar {
     0% {
         width: 0%;
-        color: white;
     }
     100% {
         width: 90%;
+    }
+}
+
+@keyframes text-change {
+    0% {
+        color: white;
+    }
+    100% {
         color: black;
+    }
+}
+
+@keyframes clrchange {
+    0% {
+        background: #ddd;
+    }
+    100% {
+        background: #B5EFCE;
+        transform: scale(1.05);
     }
 }
