@@ -110,15 +110,15 @@
             <h2 class="subheadings contacttitle"> Get in touch!</h2>
             <p class="contactdescription">Thanks for dropping by, I'd love to get to know you some more! You can reach
                 out to me below.</p>
-            <form method="post" action="mailing.php">
+            <form method="POST" action="https://formspree.io/f/mknkkarr">
                 <label for="email">email address</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="_replyto">
                 <label for="name">name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="_name">
                 <label for="subject">subject</label>
-                <input type="text" id="subject" name="subject">
-                <label for="msg">message</label>
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                <input type="text" id="subject" name="_subject">
+                <label for="message">message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
                 <button type="submit" class="contactbutton">Submit ✈️</button>
             </form>
 
