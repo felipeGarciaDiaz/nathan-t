@@ -30,6 +30,7 @@ ul {
 
 section img {
     border-radius: 2em;
+    margin: 2em 0;
 }
 
 label {
@@ -76,7 +77,7 @@ form label {
 }
 
 textarea:focus, input:focus {
-    border-color: #ACE9DD;
+    border-color: #0099da;
     box-shadow:  0 0 10px rgb(172,233,221, 0.6);
     outline: 0 none;
 }
@@ -178,7 +179,7 @@ textarea:focus, input:focus {
     align-items: center;
     padding: 5em 0;
     height: 40em;
-    margin-bottom: 3em;
+    margin: 3em 0;
 }
 
 .intro-card {
@@ -317,7 +318,7 @@ textarea:focus, input:focus {
     font-weight: bold;
 }
 
-.contactbutton:hover {
+.contactbutton:hover {      
     cursor: pointer;
     animation: clrchange 0.5s ease-out;
     animation-fill-mode: forwards;
@@ -362,6 +363,9 @@ textarea:focus, input:focus {
 #resume {
     position: relative;
 
+    text-align: center;
+    text-decoration: none;
+    color:#0E1C36;
     font-weight: bold;
     font-size: 1em;
     letter-spacing: 0.5em;
@@ -392,7 +396,7 @@ textarea:focus, input:focus {
         width: 0%;
     }
     100% {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -412,5 +416,107 @@ textarea:focus, input:focus {
     100% {
         background: #B5EFCE;
         transform: scale(1.05);
+    }
+}
+
+@media (max-width: 1268px) {
+    .intro {
+        height: 60em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .intro-card {
+        height: 80%;
+        width: 90%;
+
+        z-index: -1;
+    }
+    .project-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "proj1"
+        "proj2"
+        "proj3"
+        "proj4";
+    
+        width: 100%;
+        height: 90%;
+    }
+    .projects {
+        height: 70em;
+    }
+    nav {
+        font-family: Aileron, sans-serif;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 12em;
+        background: #0E1C36;
+    }
+    main {
+        margin-top: 12em;
+        margin-left: 0;
+    }
+    .sidebar {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .navbar {
+        height: 20%
+    }
+
+    .nav-place ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 1em 0;
+    }
+
+    .contact, .copyright {
+        display: none;
+    }
+
+    .navbar a::before {
+        content: "";
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    body {
+        height: 80%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .projects {
+        height: 90em;
+    }
+}   
+
+@media (max-width: 500px) {
+    .projects {
+        height: 110em;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects {
+        height: 150em;
     }
 }

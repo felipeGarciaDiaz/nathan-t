@@ -26,9 +26,6 @@
             </div>
             <div class="contact nav-place">
                 <ul>
-                    <li><a target="_blank" href="#" class="social"><img src="icons/email.png" alt="email icon"
-                                class="icons" rel="noopener noreferrer" height="20px" width="20px"></a>
-                    </li>
                     <li><a target="_blank" href="https://ca.linkedin.com/in/nathan-t" class="social"
                             rel="noopener noreferrer"><img src="icons/linkedin.png" alt="linkedin icon" class="icons"
                                 height="20px" width="20px"></a>
@@ -53,7 +50,8 @@
                     and automation. I'm also a freelance illustrator and I enjoy web development as well. I can never
                     get enough creative outlets to express my passion for design!
                 </p>
-                <button type="button" id="resume">RESUME</button>
+                <a href="Nathan Tang, Resume.pdf" target="_blank" id="resume"
+                    download="Nathan Tang, Resume.pdf">RESUME</a>
             </div>
             <img src="images/dp.PNG" alt="photo of nathan tang" height="320px" width="250px">
         </section>
@@ -64,26 +62,30 @@
                 <div class="projcard proj1">
                     <h3 class="proj-title">Radio Controlled Flying Wing</h3>
                     <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit eos atque perspiciatis
-                        laboriosam ipsam debitis, tempore qui cumque quaerat, odit at perferendis vitae necessitatibus
-                        mollitia. Rem, cumque dolorum. Cumque.
+                        Designing and building a radio controlled flying wing using aerodynamic analysis. Using
+                        modelling software such as SOLIDWORKS along with analysis software such as MATLAB and XFLR5
+                        to
+                        optimize for best possible airfoil airflow.
                     </p>
-                    <button type="button" class="proj-button" id="button1">Coming Soon 📅</button>
+                    <button type="button" class="proj-button" id="button1">View More 💡</button>
                 </div>
                 <div class="projcard proj2">
                     <h3 class="proj-title">Standing Desk</h3>
                     <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam illum a recusandae
-                        suscipit in tenetur deserunt quo, officia dignissimos! Cum perspiciatis fuga vero natus optio
-                        repellat a porro ab.
+                        Covid-19 has taken a toll on all of us working and learning from home. For an engineering
+                        design
+                        course, me and other mechanical engineering students design and prototype a manual standing
+                        desk
                     </p>
                     <button type="button" class="proj-button" id="button2">View More 💡</button>
                 </div>
                 <div class="projcard proj3">
-                    <h3 class="proj-title">Conway's Game of Life</h3>
+                    <h3 class="proj-title">Bionic Finger</h3>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quisquam asperiores assumenda
-                        minus quaerat nobis quam, consequuntur amet, dolorum quasi voluptatem placeat illo culpa unde
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quisquam asperiores
+                        assumenda
+                        minus quaerat nobis quam, consequuntur amet, dolorum quasi voluptatem placeat illo culpa
+                        unde
                         fugit eos quas voluptatibus in?
                     </p>
                     <button type="button" class="proj-button" id="button3">Coming Soon 📅</button>
@@ -92,7 +94,8 @@
                     <h3 class="proj-title">EIR Matching Web Tool</h3>
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere, excepturi magnam,
-                        molestias aliquam, reiciendis at ratione id a adipisci similique nesciunt numquam animi. Et ipsa
+                        molestias aliquam, reiciendis at ratione id a adipisci similique nesciunt numquam animi. Et
+                        ipsa
                         dolorum accusamus rem sequi.
                     </p>
                     <button type="button" class="proj-button" id="button4">View More 💡</button>
@@ -107,7 +110,7 @@
             <h2 class="subheadings contacttitle"> Get in touch!</h2>
             <p class="contactdescription">Thanks for dropping by, I'd love to get to know you some more! You can reach
                 out to me below.</p>
-            <form>
+            <form method="post" action="mailing.php">
                 <label for="email">email address</label>
                 <input type="email" id="email" name="email">
                 <label for="name">name</label>
@@ -121,6 +124,8 @@
 
         </section>
     </main>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
