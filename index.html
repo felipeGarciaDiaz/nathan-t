@@ -10,7 +10,7 @@
     <title>nathan tang</title>
 </head>
 
-<body>
+<body id="c">
     <nav>
         <div class="sidebar">
             <div class="logo">
@@ -18,10 +18,10 @@
             </div>
             <div class="navbar nav-place">
                 <ul>
-                    <li><a href="#introid">about</a></li>
-                    <li><a href="#projectid">projects</a></li>
-                    <li><a href="#illusid">illustration</a></li>
-                    <li><a href="#getintouch">contact</a></li>
+                    <li><a href="javascript: scrollToIntro();">about</a></li>
+                    <li><a href="javascript: scrollToProj();">projects</a></li>
+                    <li><a href="javascript: scrollToIllus();">illustration</a></li>
+                    <li><a href="javascript: scrollToContact();">contact</a></li>
                 </ul>
             </div>
             <div class="contact nav-place">
@@ -67,7 +67,7 @@
                         to
                         optimize for best possible airfoil airflow.
                     </p>
-                    <button type="button" class="proj-button" id="button1">View More 💡</button>
+                    <a href="rcplane.html" class="proj-button">View More 💡</a>
                 </div>
                 <div class="projcard proj2">
                     <h3 class="proj-title">Standing Desk</h3>
@@ -77,7 +77,7 @@
                         course, me and other mechanical engineering students design and prototype a manual standing
                         desk
                     </p>
-                    <button type="button" class="proj-button" id="button2">View More 💡</button>
+                    <a href="#" class="proj-button">View More 💡</a>
                 </div>
                 <div class="projcard proj3">
                     <h3 class="proj-title">Bionic Finger</h3>
@@ -88,7 +88,7 @@
                         unde
                         fugit eos quas voluptatibus in?
                     </p>
-                    <button type="button" class="proj-button" id="button3">Coming Soon 📅</button>
+                    <a href="#" class="proj-button">Coming Soon 📅</a>
                 </div>
                 <div class="projcard proj4">
                     <h3 class="proj-title">EIR Matching Web Tool</h3>
@@ -98,13 +98,30 @@
                         ipsa
                         dolorum accusamus rem sequi.
                     </p>
-                    <button type="button" class="proj-button" id="button4">View More 💡</button>
+                    <a href="#" class="proj-button">View More 💡</a>
                 </div>
             </div>
         </section>
         <section class="illustrations" id="illusid">
             <h2 class="subheadings">illustrations ✏️</h2>
             <hr>
+            <div class="slides">
+                <div class="slide1">
+                    <img src="pc1.png" alt="illustration of piece 1">
+                    <img src="pc2.png" alt="illustration of piece 2">
+                    <img src="pc3.png" alt="illustration of piece 3">
+                    <img src="pc4.png" alt="illustration of piece 4">
+                    <img src="pc5.png" alt="illustration of piece 5">
+                    <img src="pc6.png" alt="illustration of piece 6">
+                    <img src="pc7.png" alt="illustration of piece 7">
+                    <img src="pc8.png" alt="illustration of piece 8">
+                    <img src="pc9.png" alt="illustration of piece 9">
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
         </section>
         <section class="contact-me" id="getintouch">
             <h2 class="subheadings contacttitle"> Get in touch!</h2>
@@ -121,7 +138,6 @@
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
                 <button type="submit" class="contactbutton">Submit ✈️</button>
             </form>
-
         </section>
     </main>
 
