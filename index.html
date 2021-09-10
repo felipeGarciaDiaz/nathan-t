@@ -129,13 +129,14 @@
                 out to me below.</p>
             <form method="POST" action="https://formspree.io/f/mknkkarr">
                 <label for="email">email address</label>
-                <input type="email" id="email" name="_replyto">
+                <input type="email" id="email" name="_replyto" required>
                 <label for="name">name</label>
-                <input type="text" id="name" name="_name">
+                <input type="text" id="name" name="_name" required>
                 <label for="subject">subject</label>
                 <input type="text" id="subject" name="_subject">
                 <label for="message">message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."
+                    required></textarea>
                 <button type="submit" class="contactbutton">Submit ✈️</button>
             </form>
         </section>

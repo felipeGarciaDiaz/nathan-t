@@ -21,12 +21,12 @@ nav {
 }
 
 body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #F2E7CA);
+    background: linear-gradient(45deg, #3ce792, #f89e65, #23a6d5, #f1c54a);
     background-size: 500% 500%;
-    animation: gradient 15s ease infinite;
+    animation: bganimation 10s ease-in-out infinite;
 }
 
-@keyframes gradient {
+@keyframes bganimation {
     0% {
         background-position: 0% 50%;
     }
