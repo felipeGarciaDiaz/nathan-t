@@ -1,6 +1,59 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background: #fff;
 }
+
+ul {
+    list-style-type: none;
+}
+
+.scrollto ul li a, .goback a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #0E1C36;
+    padding: 0 2em;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+}
+
+.scrollto ul li a:hover, .goback a:hover{
+    transform: scale(1.1);
+}
+
+nav {
+    font-family: Aileron, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: blur(3px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 150px;
+    margin: 3em 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .mainsplash {
     display: flex;
@@ -26,12 +79,13 @@ body {
 .projdetails {
     display: flex;
     justify-content: center;
+    height: 50em;
 }
 
 .infocard {
     background: purple;
     width: 60%;
-    height: 20em;
+    height: 100%;
     padding: 5em;
 }
 
@@ -41,6 +95,6 @@ body {
 
 .skillset {
     width: 20%;
-    height: 20em;
-    background-color: black;
+    height: 100%;
+    background-color: #c1e6de;
 }
