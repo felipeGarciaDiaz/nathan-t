@@ -1,3 +1,46 @@
 body {
     background: #fff;
 }
+
+.mainsplash {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.rcplane {
+    background: #c1e6de;
+}
+
+.sdesk {
+    background: #c2f1d6;
+}
+
+.sdesk img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.projdetails {
+    display: flex;
+    justify-content: center;
+}
+
+.infocard {
+    background: purple;
+    width: 60%;
+    height: 20em;
+    padding: 5em;
+}
+
+.infocard h1 {
+    margin: 1em 0;
+}
+
+.skillset {
+    width: 20%;
+    height: 20em;
+    background-color: black;
+}
