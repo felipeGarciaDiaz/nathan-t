@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav aria-label="main navigation bar">
         <div class="sidebar">
             <div class="goback">
                 <a href="index.html">&lt; go back</a>
@@ -20,14 +20,18 @@
                 <img class="navbar-logo" src="images/logo.png" alt="logo for nathan tang" height="80%" width="80%">
             </div>
             <div class="scrollto">
-                <ul>
-                    <li><a href="index.html">go back!</a></li>
-                    <li><a href="index.html">go back!</a></li>
-                    <li><a href="index.html">go back!</a></li>
-                </ul>
+                <button class="openmenu">menu <img class="menuicon" src="arrows.png" alt="menu arrow icon"></button>
             </div>
         </div>
     </nav>
+    <div class="menu">
+        <ul>
+            <li><a href="#">details</a></li>
+            <li><a href="#">more stuff</a></li>
+            <li><a href="#">woohoo</a></li>
+            <li><a href="#">mega</a></li>
+        </ul>
+    </div>
     <main>
         <div class="mainsplash sdesk">
             <img src="tablesplash.png" alt="splash art for standing desk">
@@ -43,10 +47,18 @@
                     of the desk.</p>
             </div>
             <div class="skillset">
-                lfekwlnferln
+                <h2>Skills and Tools</h2>
+                <ul>
+                    <li>SolidWorks</li>
+                    <li>FEA Analysis</li>
+                    <li>Engineering Design/Analysis</li>
+                    <li>Material Selection</li>
+                </ul>
             </div>
         </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="projapp.js"></script>
 </body>
 
 </html>

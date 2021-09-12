@@ -9,8 +9,13 @@ body {
     background: #fff;
 }
 
-ul {
+nav ul {
     list-style-type: none;
+}
+
+.scrollto {
+    display: flex;
+    align-items: center;
 }
 
 .scrollto ul li a, .goback a{
@@ -28,6 +33,13 @@ ul {
     transform: scale(1.1);
 }
 
+.scrollto img {
+    margin-bottom: -5px;
+    height: 20px;
+    width: 20px;
+}
+
+
 nav {
     font-family: Aileron, sans-serif;
     position: fixed;
@@ -35,29 +47,36 @@ nav {
     left: 0;
     width: 100%;
     height: 10vh;
+    transition: all 0.5s ease-in-out;
+}
+
+nav.blur {
     backdrop-filter: blur(3px);
 }
 
+nav.solidbg {
+    background: #fff;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 90px;
     width: 150px;
-    margin: 3em 0;
 }
 
 .sidebar {
     height: 100%;
     width: 100%;
+    padding: 0 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
 }
 
 
 .mainsplash {
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 100vh;
 }
@@ -72,6 +91,7 @@ nav {
 
 .sdesk img{
     width: 100%;
+    min-width: 20em;
     height: 100%;
     object-fit: contain;
 }
@@ -79,11 +99,11 @@ nav {
 .projdetails {
     display: flex;
     justify-content: center;
-    height: 50em;
+    height: 100em;
+    width: 90%
 }
 
 .infocard {
-    background: purple;
     width: 60%;
     height: 100%;
     padding: 5em;
@@ -96,5 +116,70 @@ nav {
 .skillset {
     width: 20%;
     height: 100%;
-    background-color: #c1e6de;
+    padding: 5em;
+}
+
+.skillset h2 {
+    margin: 1.5em 0;
+}
+
+.skillset ul {
+    margin-left: 1em;
+}
+
+.menu {
+    height: 10em;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10vh;
+    right: 0;
+    background: rgba(1,1,1,0);
+    text-align: left;
+    transition: all 1s ease-in-out;
+}
+
+.menu ul {
+    list-style: none;
+    margin-right: 2em;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.openmenu {
+    border: none;
+    padding: 1em 0;
+    background: rgba(1,1,1,0);
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.visible {
+    width: 10em;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+@media (max-width: 1080px) {
+    nav {
+        height: 25vh;
+    }
+    .sidebar {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 10em;
+    }
+    .scrollto, .menu {
+        display: none;
+    }
 }
