@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    line-height: 1.8;
+}
+
 table{
     text-align: center;
     margin: 1em 0;
@@ -31,6 +35,16 @@ nav ul {
     list-style-type: none;
 }
 
+p a {
+    text-decoration: none;
+    color: rgb(29, 78, 156);
+    font-weight: 500;
+}
+
+.criteria {
+    margin: 1em 0;
+}
+
 .scrollto {
     display: flex;
     align-items: center;
@@ -47,7 +61,7 @@ nav ul {
     font-weight: 600;
 }
 
-.scrollto ul li a:hover, .goback a:hover{
+.scrollto ul li a:hover, .goback a:hover, .openmenu:hover, .menu a:hover{
     transform: scale(1.1);
 }
 
@@ -117,7 +131,6 @@ nav.solidbg {
 .projdetails {
     display: flex;
     justify-content: space-evenly;
-    height: 28em;
     width: 100%;
     padding: 2em 0;
 }
@@ -166,7 +179,7 @@ nav.solidbg {
     display: block;
     text-decoration: none;
     color: black;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -217,7 +230,7 @@ nav.solidbg {
     background: #32e07d;
 }
 
-.tablecontainer {
+.tablecontainer, .tablevid {
     display: flex;
     justify-content: center;
 }
@@ -227,13 +240,12 @@ nav.solidbg {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    
 }
 
 .blurborder {
-    width: 20em;
-    height: 25em;
+    width: 100%;
+    height: 15em;
+    text-align: center;
     box-shadow: 0 0 8px 8px white inset;
 }
 
@@ -242,7 +254,7 @@ nav.solidbg {
 }
 
 .blur1 {
-    background: url("gear.JPG") left top no-repeat;
+    background: url("gear.JPG") right top no-repeat;
     background-size: contain;
 }
 
@@ -251,9 +263,17 @@ nav.solidbg {
     background-size: contain;
 }
 
-.blur3 {
-    background: url("leadscrew.JPG") left top no-repeat;
-    background-size: contain;
+.tableimgs {
+    display: flex;
+    justify-content: center;
+}
+
+.tableimgs img{
+    height: auto;
+    width: auto;
+    max-width: 25em;
+    max-height: 20em;
+    padding: 1em;
 }
 
 @media (max-width: 1080px) {
@@ -273,6 +293,25 @@ nav.solidbg {
     }
 }
 
+.written {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.botbar {
+    background:#c2f1d6;
+    padding: 0.5em;
+}
+
+#dlreport {
+    padding: 1em;
+    text-decoration: none;
+    color: #0E1C36;
+    background-color: rgb(196, 196, 196);
+    border-radius: 2em;
+}
+
 @media (max-width: 768px) {
    .projdetails {
        height: 65em;
@@ -281,5 +320,17 @@ nav.solidbg {
    }
    .skillset-resize {
        width: 30%;
+   }
+   .liftimgs {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       height: 30em;
+   }
+   .blur1, .blur2 {
+       background-position: center;
+   }
+   .tableimgs {
+       flex-direction: column;
    }
 }

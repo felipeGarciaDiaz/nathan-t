@@ -26,10 +26,12 @@
     </nav>
     <div class="menu">
         <ul>
-            <li><a href="#">details</a></li>
-            <li><a href="#">more stuff</a></li>
-            <li><a href="#">woohoo</a></li>
-            <li><a href="#">mega</a></li>
+            <li><a href="javascript: scrollToA();">description</a></li>
+            <li><a href="javascript: scrollToB();">engineering design</a></li>
+            <li><a href="javascript: scrollToC();">anthropometric data and ergonomics</a></li>
+            <li><a href="javascript: scrollToD();">mechanical design</a></li>
+            <li><a href="javascript: scrollToE();">material selection</a></li>
+            <li><a href="javascript: scrollToF();">FEA</a></li>
         </ul>
     </div>
     <main>
@@ -39,7 +41,7 @@
         <div class="alldetails">
             <div class="projdetails">
                 <div class="infocard">
-                    <h1>Manual Standing Desk</h1>
+                    <h1 id="#a">Manual Standing Desk</h1>
                     <p>The last year or so has been a hard hit on everyone due to COVID-19. From adapting to online
                         school
                         to working remotely, we have significantly increased our time spent sitting at a desk which can
@@ -64,7 +66,7 @@
                 </div>
             </div>
             <div class="engdesign">
-                <h2><span class="numtag">1</span>Engineering Design</h2>
+                <h2><span class="numtag" id="#b">1</span>Engineering Design</h2>
                 <hr>
                 <p>
                     Before I could fully grasp a concept design, I conducted research on current market
@@ -282,14 +284,32 @@
                     verifying, and prototyping our manual standing desk.
                 </p>
 
-                <h2><span class="numtag">2</span>Mechanical Design</h2>
+                <h2><span class="numtag" id="#c">2</span>Anthropometric Data and Ergonmics</h2>
+                <hr>
+                <p>
+                    In order to determine our general dimensions before modelling a prototype using SolidWorks, I
+                    consulted anthropometric data to decide on common body part measurements to determine the most
+                    ideal dimensions which would cater to most of the population. With our user in mind, we looked at
+                    the top 97th eprcentile in terms of standing and sitting height, as well as common table top
+                    dimensions.
+                </p>
+                <div class="tablevid">
+                    <img src="anth.JPG" alt="">
+                </div>
+                <p class="caption"><i>Example anthropometric data retrieved</i></p>
+                <p>You can find the anthropometric data we used
+                    <a href="https://multisite.eos.ncsu.edu/www-ergocenter-ncsu-edu/wp-content/uploads/sites/18/2016/06/Anthropometric-Detailed-Data-Tables.pdf"
+                        target="_blank">here</a>.
+                </p>
+
+                <h2><span class="numtag" id="#d">3</span>Mechanical Design</h2>
                 <hr>
                 <p>
                     For our vertical lift mechanism, we decided to go with a variation of a screw jack, involving the
                     use of a lead screw, worm gear, and worm screw. This mechanism was selected since it proved to be
                     relatively more safe, quiet, and efficient (due to the absence of an electric or pressurized system)
-                    based on research. By taking advantage of gear ratios and reducing the torque allwoed to operate the
-                    lift mechanism, users can easily adjust the height of their desk.
+                    based on research. By taking advantage of gear ratios and reducing the torque required to operate
+                    the lift mechanism, users can easily adjust the height of their desk.
                 </p>
                 <div class="liftimgs">
                     <div class="blurborder blur1">
@@ -297,10 +317,86 @@
                     <div class="blurborder blur2">
                     </div>
                 </div>
-                <p class="caption"><i>Worm Gear and Worm Screw used in lift mechanism</i></p>
+                <p class="caption"><i>Worm gear and worm screw used in lift mechanism</i></p>
+                <p>Users can turn a lever which in turn, rotates the worm screw, worm gear, and lead screw, converting
+                    rotational motion into linear motion and adjusting the desk height. With the addition of collapsible
+                    teloscopic tubes, we are able to constrain the movement and range of the leadscrew as well as encase
+                    the lead screw for safety concerns. Other notable mechanisms included are ball bearings to stop the
+                    tabletop from rotating along with the leadscrew and locks on the polyurethane wheels for safety
+                    reasons.
+                </p>
+                <div class="tableimgs">
+                    <img src="secgearbox.png" alt="">
+                    <img src="teletubes.png" alt="">
+                    <img src="wheels.jpg" alt="">
+                </div>
+                <div class="tableimgs">
+                    <img src="gearbox.png" alt="">
+                    <img src="ballbearings2.png" alt="">
+                    <img src="wheellock.jpg" alt="">
+                </div>
+                <div class="tableimgs">
+                </div>
+                <p class="caption"><i>Gallery of lift mechanism, telescopic tubes, ball bearings, and polyurethane
+                        wheels with locks</i></p>
+                <div class="tablevid">
+                    <video width="750" height="500" controls>
+                        <source src="tablevid.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p class="caption"><i>Manual standing desk in action with removed tabletop</i></p>
+
+                <h2><span class="numtag" id="#e">4</span>Material Selection</h2>
+                <hr>
+                <p>
+                    For different components of our standing desk, we selected materials based on desirable traits and
+                    criteria that would optimize the prototype. Below are a few of the criteria we considered for some
+                    of the components. We used GRANTA EduPack 2020 software and their database to retrieve numerical
+                    values for
+                    microstructural properties.
+                </p>
+                <div class="criteria"><b>Table Top</b> - Compressive Strength, Density, Price, Hardness (Vickers),
+                    Safety Concerns, Material Durability</div>
+                <div class="criteria"><b>Wheels</b> - Maximum Load, Scratch Resistance, Roll Resistance, Cushioning,
+                    Resilience</div>
+                <div class="criteria"><b>Table Structure</b> - Compressive Strength, Density, Price, Castability,
+                    Machinability</div>
+                <div class="tablevid">
+                    <img src="matselect.JPG" alt="">
+                </div>
+                <p class="caption"><i>Example of comparison table which analyzes favourable criteria of material</i></p>
+                <p>We decided on an Alluminum Alloy for the table structure, Tempered Soda Lime Glass for the table top,
+                    and Polyurethane Caster Wheels</p>
+
+                <h2><span class="numtag" id="#f">5</span>Finite Element Analysis (FEA)</h2>
+                <hr>
+                <p>
+                    A notable verification processes we utilized was FEA to verify our engineering specifications and if
+                    the requirements we set could be met. In this process, we took individual components which would be
+                    kept under stress during the use of the desk and analyzed them witht he maximum load in mind.
+                </p>
+                <div class="tableimgs">
+                    <img src="fea1.png" alt="FEA analysis of tabletop">
+                    <img src="fea2.png" alt="FEA analysis of table base">
+                    <img src="fea3.png" alt="FEA analysis of telescopic tube">
+                </div>
+                <div class="tableimgs">
+                    <img src="fea4.png" alt="FEA analysis of conical support">
+                    <img src="fea5.png" alt="FEA analysis of telescopic tube">
+                    <img src="fea6.png" alt="FEA analysis of safety box lid">
+                </div>
+                <p class="caption"><i>Series of FEA on multiple components under stress during desk use</i></p>
+
+                <p class="caption">If you would like to see more, take a look at our written report and analysis!</p>
+                <div class="written">
+                    <a href="ME101 Final Lab Report.pdf" target="_blank" id="dlreport"
+                        download="ME101 Final Lab Report.pdf">DOWNLOAD</a>
+                </div>
+                <div class="botbar"></div>
             </div>
         </div>
     </main>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="projapp.js"></script>
 </body>
