@@ -259,11 +259,18 @@ textarea:focus, input:focus {
     position: absolute;
     height: 70%;
     width: 75%;
-    background-image: url("tablesplash.png");
     background-size: cover;
     right: 0;
     bottom: 0;
     opacity: 0.2;
+}
+
+.ban1 {
+    background-image: url("placehodlerrc.png");
+}
+
+.ban2 {
+    background-image: url("tablesplash.png");
 }
 
 .proj1 {
@@ -589,6 +596,9 @@ textarea:focus, input:focus {
 }
 
 @media (max-width: 400px) {
+    .proj-button {
+        font-size: 11px;
+    }
     .projects {
         height: 150em;
     }

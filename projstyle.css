@@ -6,9 +6,10 @@
 }
 
 video {
-    width: 230px;
+    width: 400px;
     height: 300px;
     object-fit: cover;
+    z-index: -1;
 }
 
 body {

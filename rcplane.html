@@ -26,13 +26,15 @@
     </nav>
     <div class="menu">
         <ul>
-            <li><a href="javascript: scrollToA();">Engineering Design</a></li>
-            <li><a href="javascript: scrollToB();">Aerodynamic Analysis</a></li>
+            <li><a href="javascript: scrollToA();">Description</a></li>
+            <li><a href="javascript: scrollToB();">Engineering Design</a></li>
+            <li><a href="javascript: scrollToC();">Components and Electronics</a></li>
+            <li><a href="javascript: scrollToD();">Aerodynamic Analysis</a></li>
         </ul>
     </div>
     <main>
         <div class="mainsplash rcplane">
-            <img src="" alt="splash art for standing desk">
+            <img src="placehodlerrc.png" alt="splash art for rc plane">
         </div>
         <div class="alldetails">
             <div class="projdetails">
@@ -63,15 +65,150 @@
                 <h2><span class="numtag prj1clr" id="#b">1</span>Engineering Design</h2>
                 <hr>
                 <p>
+                    Given that I had little prior knowledge of how flight aerodynamics and aviation actually works and
+                    the general
+                    equations involved in flight, I decided to do some research and dive deep into some textbooks and
+                    radio-controlled plane resources (More
+                    specifically, <a href="https://www.amazon.ca/Aircraft-Design-Conceptual-Daniel-Raymer/dp/1600869114"
+                        target="_blank">Daniel P Raymer's "Aircraft Design: A Conceptual Approach"</a> and <a
+                        href="https://www.flitetest.com/" target="_blank">FliteTest</a>). These resources helped me
+                    self learn the fundamental knowledge required to
+                    draft reasonable designs!
+
                     Before diving straight into material selection and desigining my flying wing, I decided to draft a
-                    full list of criteria ranging from flying speed and time to general flying style.
+                    full list of criteria ranging from flying speed and time to general flying style. Here is a
+                    shortened table representing the most important criterias.
+                <div class="tablecontainer">
+                    <i>Table 1 Shortened Version of Engineering Specifications for Radio Controlled Flying Wing</i>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>No.</td>
+                                <td>Characteristic</td>
+                                <td>Relation</td>
+                                <td>Value</td>
+                                <td>Units</td>
+                                <td>Verification Method</td>
+                                <td>Comments</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Must be able to fly for desired amount of time (Functional Requirement)</td>
+                                <td>&gt;&equals;</td>
+                                <td>10</td>
+                                <td>minutes</td>
+                                <td>analysis and examination</td>
+                                <td>Calculate the amount of flight time from battery specifications (capacity and low
+                                    voltage cutoff) as well as motor draw. Also measure the flight time during actual
+                                    flight to verify accuracy of analysis.</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Must be able to withstand weight of all components as well as aircraft structure
+                                    (Constraint Requirement)
+                                </td>
+                                <td>&gt;&equals;</td>
+                                <td>Weight of Components (See Below)</td>
+                                <td>grams</td>
+                                <td>analysis</td>
+                                <td>Calculate the estimated weight of aircraft structure (After amterial selection) and
+                                    components.</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Must be within cost range (Constraint Requirement)</td>
+                                <td>&lt;&equals;</td>
+                                <td>200</td>
+                                <td>CAD</td>
+                                <td>analysis</td>
+                                <td>Calculate total costs of production and materials.</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Must achieve desired cruise speed (Non-Functional Requirement)</td>
+                                <td>&gt;&equals;</td>
+                                <td>14</td>
+                                <td>m/s</td>
+                                <td>analysis</td>
+                                <td>Calculate the thrust of the motor and find the speed at 50% throttle.</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Must be aesthetically pleasing (Non-Functional Requirement)</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>examination</td>
+                                <td>Research modern and trending aircraft designs as well as incorporate personal
+                                    creative designs to enhance aesthetics!</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>I started by calculating the Wing Cubed Loading for my design. The wing cubed loading is
+                    expressed as:
+                    \[WCL = {w \over SA^{(3/2)}}\]
+                    where \(WCL\) is the wing cubed loading, \(w\) is the weight, and \(SA\) is the wing surface area.
+                    Ensuring that my \(WCL\) was less than 4 was crucial since I wanted to build a slow flying wing. You
+                    cans ee how I got weight estimates in the <a href="javascript: scrollToC();">next section</a>.
+                </p>
+
+                <h2><span class="numtag prj1clr" id="#c">2</span>Components and Electronics Selection</h2>
+                <hr>
+                <p>
+                    In addition to the structural design and specifications, I also had to select a series of
+                    electronics in order to power my RC flying wing. These electronics include LiPo batteries, an
+                    Electronic Speed Controller (ESC), a brushless DC Motor, Servo Motors, a transmitter, and a
+                    receiver. During this stage, I challenged myself to learn more about each of the components in terms
+                    of storage, usage, and compatibility to ensure safety. Some examples of this include, ensuring the
+                    ESC has a higher
+                    amperage rating and built in BEC to avoid fire, checking the LiPo for safe connectors and safe
+                    discharge rate, and learning about LiPo charging safety.
+                </p>
+                <div class="tableimgs">
+                    <img src="rc (1).jpg" alt="">
+                    <img src="rc (2).jpg" alt="">
+                    <img src="rc (4).jpg" alt="">
+                </div>
+                <div class="tableimgs">
+                    <img src="rc (5).jpg" alt="">
+                    <img src="rc (6).jpg" alt="">
+                    <img src="rc (7).jpg" alt="">
+                </div>
+                <div class="tableimgs">
+                    <img src="rc (3).jpg" alt="">
+                </div>
+                <p class="caption"><i>Electronics used in radio-controlled flying wing. Shown are a 5000mah 80C 2S LiPo
+                        Battery, (2) 9g Micro Servos, 30A Electronic Speed Controller, A2212/6T 2200KV DC Brushless
+                        Motor, and Flysky FS-i6 Transmitter and Receiver.</i></p>
+                <p>
+                    Beyond compatibility and safety, ensuring the motor produced enough thrust for a reasonable thrust
+                    to weight ratio was essential to ensure flight. The 2200KV motor shown above was able to generate
+                    a 450 gram thrust on a 2C battery ensuring for a close to 1:1 (thrust:weight) ratio allowing for
+                    ease of flight. With a motor draw of 21.5A on average, I decided to go with a 30A ESC allowing for a
+                    higher amp rating of about 40% more, keeping the components nice and cool during flight.
+                </p>
+
+                <p>
+                    I created a spread sheet of
+                    the weight of the components and additional parts that might be an addition to the overall weight.
+                    For safety measures, an additional 50 grams was added in calculations.
                 </p>
 
                 <h2><span class="numtag prj1clr" id="#c">2</span>Aerodynamic Analysis</h2>
                 <hr>
                 <p>
-                    --
+                    Using XFLR5
                 </p>
+                <div class="tableimgs">
+                    <img src="lift polar graph.JPG" alt="">
+                    <img src="drag polar (FN of Alpha).JPG" alt="">
+                    <img src="drag polar graph.JPG" alt="">
+                    <img src="moment polar.JPG" alt="">
+                </div>
                 <div class="botbar rcplane"></div>
             </div>
         </div>
@@ -79,6 +216,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="projapp.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </body>
 
 </html>
