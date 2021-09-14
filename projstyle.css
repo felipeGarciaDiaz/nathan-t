@@ -6,6 +6,11 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
     line-height: 1.8;
 }
 
@@ -109,7 +114,7 @@ nav.solidbg {
 
 
 .mainsplash {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -170,6 +175,7 @@ nav.solidbg {
     transition: all 1s ease-in-out;
 }
 
+
 .menu ul {
     list-style: none;
     margin-right: 2em;
@@ -205,6 +211,7 @@ nav.solidbg {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 
 .engdesign {
@@ -281,7 +288,7 @@ nav.solidbg {
         height: 25vh;
     }
     .projdetails {
-        height: 40em;
+        height: 45em;
     }
     .sidebar {
         flex-direction: column-reverse;
@@ -314,7 +321,7 @@ nav.solidbg {
 
 @media (max-width: 768px) {
    .projdetails {
-       height: 65em;
+       height: 90em;
        flex-direction: column;
        align-items: center;
    }
@@ -333,4 +340,10 @@ nav.solidbg {
    .tableimgs {
        flex-direction: column;
    }
+}
+
+@media (max-width: 480px) {
+    .projdetails {
+        height: 110em;
+    }
 }
