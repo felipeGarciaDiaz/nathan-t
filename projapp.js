@@ -57,3 +57,14 @@ $(window).on("scroll", function () {
         $("nav").addClass("solidbg");
     }
 });
+
+$(window).on("resize", function () {
+    height = $('.mainsplash').height();
+    if ($(window).scrollTop() + $('nav').height() < height) {
+        $("nav").addClass("blur");
+        $("nav").removeClass("solidbg");
+    } else {
+        $("nav").removeClass("blur");
+        $("nav").addClass("solidbg");
+    }
+});

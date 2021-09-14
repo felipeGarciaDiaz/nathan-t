@@ -246,11 +246,24 @@ textarea:focus, input:focus {
 }
 
 .projcard {
+    position: relative;
     width: 90%;
     height: 90%;
     margin: 2em;
     justify-self: center;
     border-radius: 1em;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    height: 70%;
+    width: 75%;
+    background-image: url("tablesplash.png");
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
 }
 
 .proj1 {
@@ -286,10 +299,15 @@ textarea:focus, input:focus {
     margin-bottom: 1em;
 }
 
+.inactive {
+    pointer-events: none;
+    cursor: default; 
+}
+
 .proj-button {
     font-weight: 500;
     font-size: 1em;
-    background:rgba(255,255,255, 0.3);;
+    background:rgba(255,255,255, 0.4);;
     border: none;
     border-radius: 1em;
     margin-left: 1.5em;

@@ -126,14 +126,14 @@ nav.solidbg {
 }
 
 .rcplane {
-    background: #c1e6de;
+    background: #ACE9DD;
 }
 
 .sdesk {
-    background: #c2f1d6;
+    background: #B5EFCE;
 }
 
-.sdesk img{
+.mainsplash img{
     width: 100%;
     min-width: 20em;
     height: 100%;
@@ -241,6 +241,13 @@ nav.solidbg {
     font-size: 0.8em;
     margin-right: 1em;
     color: #fff;
+}
+
+.prj1clr {
+    background: #7aeed7;
+}
+
+.prj2clr {
     background: #32e07d;
 }
 
@@ -325,7 +332,6 @@ nav.solidbg {
 }
 
 .botbar {
-    background:#c2f1d6;
     padding: 0.5em;
 }
 
