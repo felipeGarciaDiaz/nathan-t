@@ -148,14 +148,6 @@
                     </table>
                 </div>
 
-                <p>I started by calculating the Wing Cubed Loading for my design. The wing cubed loading is
-                    expressed as:
-                    \[WCL = {w \over SA^{(3/2)}}\]
-                    where \(WCL\) is the wing cubed loading, \(w\) is the weight, and \(SA\) is the wing surface area.
-                    Ensuring that my \(WCL\) was less than 4 was crucial since I wanted to build a slow flying wing. You
-                    cans ee how I got weight estimates in the <a href="javascript: scrollToC();">next section</a>.
-                </p>
-
                 <h2><span class="numtag prj1clr" id="#c">2</span>Components and Electronics Selection</h2>
                 <hr>
                 <p>
@@ -193,13 +185,32 @@
                 </p>
 
                 <p>
-                    I created a spread sheet of
+                    I then decided to look into feasible materials that would be easily accessible and easily formable.
+                    After doing some lengthy research, I found that many radio-controlled aircrafts use foam board to
+                    build the structure of the aircraft since it was so lightweight and robust. As well, repairing and
+                    replacing components in the case of damage (since it will be my first time flying something of this
+                    sort) is easy and favorable.
+
+                    I created a spreadsheet of
                     the weight of the components and additional parts that might be an addition to the overall weight.
-                    For safety measures, an additional 50 grams was added in calculations.
+                    An additional 100 grams was added in calculations as a weight estimate to account for small parts
+                    such as push rods, hinges, and the general lightweight structure. You can see my weight estimate
+                    below.
                 </p>
+                <p class="caption"><i>Table 2: Weight estimates of electronics and components of radio-controlled flying
+                        wing</i></p>
 
                 <h2><span class="numtag prj1clr" id="#c">2</span>Aerodynamic Analysis</h2>
                 <hr>
+                <p>I started by calculating the Wing Cubed Loading for my design. The wing cubed loading is
+                    expressed as:
+                    \[WCL = {w \over SA^{(3/2)}}\]
+                    where \(WCL\) is the wing cubed loading, \(w\) is the weight, and \(SA\) is the wing surface area.
+                    The wing cubed loading specifies the general flying characteristics of a plane, comparing weight and
+                    surface area, where a lower \(WCL\) means slower flying.
+                    Ensuring that my \(WCL\) was less than 4 was crucial since I wanted to build a slow flying wing. You
+                    can see how I got weight estimates in the <a href="javascript: scrollToC();">previous section</a>.
+                </p>
                 <p>
                     Using XFLR5
                 </p>
