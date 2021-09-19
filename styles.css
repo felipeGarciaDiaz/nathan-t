@@ -585,21 +585,24 @@ textarea:focus, input:focus {
 
 @media (max-width: 768px) {
     .projects {
-        height: 90em;
+        height: 100em;
     }
 }   
 
 @media (max-width: 500px) {
     .projects {
-        height: 110em;
+        height: 130em;
+    }
+    .proj-button {
+        font-size: 14px;
     }
 }
 
 @media (max-width: 400px) {
     .proj-button {
-        font-size: 11px;
+        font-size: 10px;
     }
     .projects {
-        height: 150em;
+        height: 180em;
     }
 }

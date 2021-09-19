@@ -314,7 +314,7 @@ nav.solidbg {
         height: 25vh;
     }
     .projdetails {
-        height: 45em;
+        height: 50em;
     }
     .sidebar {
         flex-direction: column-reverse;
@@ -346,7 +346,7 @@ nav.solidbg {
 
 @media (max-width: 768px) {
    .projdetails {
-       height: 90em;
+       height: 95em;
        flex-direction: column;
        align-items: center;
    }
