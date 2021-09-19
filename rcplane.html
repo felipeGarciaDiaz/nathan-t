@@ -39,10 +39,10 @@
         <div class="alldetails">
             <div class="projdetails">
                 <div class="infocard">
-                    <h1 id="#a">Radio Controlled Flying Wing</h1>
+                    <h1 id="#a">Radio-Controlled Flying Wing</h1>
                     <p>Aviation and aircraft design has always been something that fascinates me. Challenging myself, I
                         decided to take on this project without ever being formally taught in aerodynamics, aviation, or
-                        aircraft design! See how my thought process behind deciding on an a type of aircraft, designing
+                        aircraft design! See how my thought process behind deciding on a type of aircraft, designing
                         the aircraft, optimizing for best flight characteristics, and building/testing the prototype! I
                         intend to use software such as MATLAB, SolidWorks, and XFLR5 to help me optimize and execute the
                         best design
@@ -65,19 +65,19 @@
                 <h2><span class="numtag prj1clr" id="#b">1</span>Engineering Design</h2>
                 <hr>
                 <p>
-                    Given that I had little prior knowledge of how flight aerodynamics and aviation actually works and
+                    Given that I had little prior knowledge of how flight aerodynamics and aviation works and
                     the general
                     equations involved in flight, I decided to do some research and dive deep into some textbooks and
                     radio-controlled plane resources (More
                     specifically, <a href="https://www.amazon.ca/Aircraft-Design-Conceptual-Daniel-Raymer/dp/1600869114"
                         target="_blank">Daniel P Raymer's "Aircraft Design: A Conceptual Approach"</a> and <a
                         href="https://www.flitetest.com/" target="_blank">FliteTest</a>). These resources helped me
-                    self learn the fundamental knowledge required to
+                    self-learn the fundamental knowledge required to
                     draft reasonable designs!
 
-                    Before diving straight into material selection and desigining my flying wing, I decided to draft a
+                    Before diving straight into material selection and designing my flying wing, I decided to draft a
                     full list of criteria ranging from flying speed and time to general flying style. Here is a
-                    shortened table representing the most important criterias.
+                    shortened table representing the most important criteria.
                 <div class="tablecontainer">
                     <i>Table 1 Shortened Version of Engineering Specifications for Radio Controlled Flying Wing</i>
                     <table>
@@ -155,9 +155,9 @@
                     electronics in order to power my RC flying wing. These electronics include LiPo batteries, an
                     Electronic Speed Controller (ESC), a brushless DC Motor, Servo Motors, a transmitter, and a
                     receiver. During this stage, I challenged myself to learn more about each of the components in terms
-                    of storage, usage, and compatibility to ensure safety. Some examples of this include, ensuring the
+                    of storage, usage, and compatibility to ensure safety. Some examples of this include ensuring the
                     ESC has a higher
-                    amperage rating and built in BEC to avoid fire, checking the LiPo for safe connectors and safe
+                    amperage rating and built-in BEC to avoid fire, checking the LiPo for safe connectors and safe
                     discharge rate, and learning about LiPo charging safety.
                 </p>
                 <div class="tableimgs">
@@ -173,16 +173,16 @@
                 <div class="tableimgs">
                     <img src="rc (3).jpg" alt="">
                 </div>
-                <p class="caption"><i>Electronics used in radio-controlled flying wing. Shown are a 5000mah 80C 2S LiPo
+                <p class="caption"><i>Electronics used in the radio-controlled flying wing. Shown are a 5000mah 80C 2S
+                        LiPo
                         Battery, (2) 9g Micro Servos, 30A Electronic Speed Controller, A2212/6T 2200KV DC Brushless
                         Motor, and Flysky FS-i6 Transmitter and Receiver.</i></p>
                 <p>
                     Beyond compatibility and safety, ensuring the motor produced enough thrust for a reasonable thrust
                     to weight ratio was essential to ensure flight. The 2200KV motor shown above was able to generate
-                    a 650 gram thrust on a 2C battery ensuring for a ratio greater 1:1 (thrust:weight) allowing for
+                    a 650 gram thrust on a 2C battery ensuring a ratio greater than 1:1 (thrust:weight) allowing for
                     ease of flight. With a motor draw of 15A on average, I decided to go with a 30A ESC allowing for a
-                    higher amp rating of about 100% more, keeping the components nice and cool during flight. In order
-                    to
+                    higher amp rating of about 100% more, keeping the components nice and cool during flight. To
                     meet the desired flight time, I picked a battery that could withstand the motor draw for a
                     reasonable flight time. Using the following equation below with my 2200mah battery, I was able to
                     get a flight
@@ -196,12 +196,12 @@
                     After doing some lengthy research, I found that many radio-controlled aircrafts use foam board to
                     build the structure of the aircraft since it was so lightweight and robust. As well, repairing and
                     replacing components in the case of damage (since it will be my first time flying something of this
-                    sort) is easy and favorable.
+                    sort) is easy and favourable.
 
                     I created a spreadsheet of
                     the weight of the components and additional parts that might be an addition to the overall weight.
                     An additional 150 grams was added in calculations as a weight estimate to account for small parts
-                    such as push rods, hinges, and the general lightweight structure. You can see my weight estimate
+                    such as pushrods, hinges, and the general lightweight structure. You can see my weight estimate
                     below.
                 </p>
                 <p class="caption"><i>Table 2: Weight estimates of electronics and components of radio-controlled flying
@@ -295,7 +295,7 @@
                     where \(WCL\) is the wing cubed loading, \(w\) is the weight, and \(SA\) is the wing surface area.
                     The wing cubed loading specifies the general flying characteristics of a plane, comparing weight and
                     surface area, where a lower \(WCL\) means slower flying.
-                    Ensuring that my \(WCL\) was about 4 was crucial since I wanted to build a slow flying wing. You
+                    Ensuring that my \(WCL\) was about 4 was crucial since I wanted to build a slow-flying wing. You
                     can see how I got weight estimates in the <a href="javascript: scrollToC();">previous section</a>.
                     Keeping this in mind, I solved for the surface area required to maintain a WCL of 4, which came to
                     be \({0.25m^2}\). I used this to then determine combinations of span and chord. You can see a sketch
@@ -305,14 +305,14 @@
                     <img src="sketch.png" alt="">
                 </div>
                 <p>After deciding general dimensions, I went ahead to pick an airfoil. Taking into consideration that I
-                    was going to use foamboard, it was crucial for me to pick the most optimal airfoil that can be
+                    was going to use foamboard, I needed to pick the most optimal airfoil that can be
                     formed using a knife and foam board. This led me to narrow down my search to two airfoils; the
                     Clark-Y airfoil and the N-10. Unfortunately, both are flat bottomed for ease of airfoil formability
                     but are
                     not ideal for flight trimming to ensure straight flight, but there were no other better options.
                 </p>
                 <p>
-                    Using XFLR5 I did an aerodynamics analyis of both airfoils to better determine their flight
+                    Using XFLR5 I did an aerodynamics analysis of both airfoils to better determine their flight
                     characteristics and make an informed decision for my airfoil of use. Using the following equation
                     (specific to aircraft flight)
                     for Reynold's Number,
