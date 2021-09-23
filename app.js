@@ -23,18 +23,18 @@ prev.addEventListener('mousedown', () => {
 });
 
 function scrollToIntro() {
-    document.querySelector('#introid').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#introid').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function scrollToProj() {
-    document.querySelector('#projectid').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#projectid').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function scrollToIllus() {
-    document.querySelector('#illusid').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#illusid').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function scrollToContact() {
-    document.querySelector('#getintouch').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#getintouch').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 

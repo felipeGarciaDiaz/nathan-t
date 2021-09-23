@@ -456,6 +456,10 @@ textarea:focus, input:focus {
     width: 10em;
 }
 
+#introid, #projectid, #illusid, #getintouch {
+    scroll-margin-top: 10em;
+}
+
 #resume:hover {
     cursor: pointer;
 }
@@ -576,10 +580,6 @@ textarea:focus, input:focus {
         height: 100%;
         width: 100%;
         border-radius: 5px;
-    }
-
-    body {
-        height: 80%;
     }
 }
 
