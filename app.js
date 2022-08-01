@@ -22,19 +22,11 @@ prev.addEventListener('mousedown', () => {
     }
 });
 
-function scrollToIntro() {
-    document.querySelector('#introid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+let scrollTo = (domID) => {
+    document.querySelector(domID).scrollIntoView({ behavior: 'smooth', block: 'start' });
+    
 }
-
-function scrollToProj() {
-    document.querySelector('#projectid').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function scrollToIllus() {
-    document.querySelector('#illusid').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-function scrollToContact() {
-    document.querySelector('#getintouch').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
+scrollTo('#introid");
+scrollTo('#projectid');
+scrollTo('#illusid');
+scrollTo('#getintouch');
